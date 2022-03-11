@@ -76,7 +76,8 @@ jobs:
                 uname -m && \
                 apt-get -y install make && \
                 python3.8 setup.py install && \
-                bash -c 'source /ci/env_vars.sh; cd $GITHUB_WORKSPACE; ./tools/run_with_cov.py ./run_tests.py $CI_ARGS' && \
+                python3.8 -m pip install pytest && \
+                pytest && \
                 deactivate'
 
 
