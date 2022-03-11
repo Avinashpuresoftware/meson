@@ -75,6 +75,9 @@ jobs:
                 python3.8 --version && \
                 uname -m && \
                 apt-get -y install make && \
+                apt-get -y install autoconf automake build-essential cmake libtool mercurial pkg-config && \
+                apt-get install libglib2.0-dev -y && \
+                apt-get install llvm-dev -y && \
                 python3.8 setup.py install && \
                 python3.8 -m pip install meson && \
                 python3.8 -m pip install pytest ninja && \
