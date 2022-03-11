@@ -76,8 +76,9 @@ jobs:
                 uname -m && \
                 apt-get -y install make && \
                 python3.8 setup.py install && \
-                python3.8 -m pip install pytest && \
+                python3.8 -m pip install pytest ninja && \
                 pytest && \
+                ninja test && \
                 deactivate'
 
 
