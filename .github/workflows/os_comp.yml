@@ -79,6 +79,7 @@ jobs:
                 apt-get install libglib2.0-dev -y && \
                 apt-get install llvm-dev -y && \
                 apt-get install libpq-dev -y libxml2-dev -y libxslt1-dev -y python3-dev -y && \
+                apt-get install python-dev -y && \
                 apt-get install tachyon -y && \
                 python3.8 setup.py install && \
                 python3.8 -m pip install meson && \
